@@ -1,1 +1,8 @@
-d:\Bruno HDD\Arquivos Pessoais\Workshop Testes Automatizados\Projetos\HelloWorld\demo\src\main\java\com\example\App.java
+d:\Bruno HDD\Arquivos Pessoais\Workshop Testes Automatizados\Projetos\HelloWorld\demo\src\main\java\drivers\options\acceptInsecureCerts.java
+d:\Bruno HDD\Arquivos Pessoais\Workshop Testes Automatizados\Projetos\HelloWorld\demo\src\main\java\drivers\options\browserVersion.java
+d:\Bruno HDD\Arquivos Pessoais\Workshop Testes Automatizados\Projetos\HelloWorld\demo\src\main\java\drivers\remotewebdriver\capabilities.java
+d:\Bruno HDD\Arquivos Pessoais\Workshop Testes Automatizados\Projetos\HelloWorld\demo\src\main\java\waits\threadSleep.java
+d:\Bruno HDD\Arquivos Pessoais\Workshop Testes Automatizados\Projetos\HelloWorld\demo\src\main\java\drivers\options\pageLoadStrategy.java
+d:\Bruno HDD\Arquivos Pessoais\Workshop Testes Automatizados\Projetos\HelloWorld\demo\src\main\java\drivers\options\timeouts.java
+d:\Bruno HDD\Arquivos Pessoais\Workshop Testes Automatizados\Projetos\HelloWorld\demo\src\main\java\drivers\options\proxy.java
+d:\Bruno HDD\Arquivos Pessoais\Workshop Testes Automatizados\Projetos\HelloWorld\demo\src\main\java\drivers\options\platformName.java

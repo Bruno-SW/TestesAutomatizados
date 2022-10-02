@@ -1,1 +1,8 @@
-App.class
+drivers\options\pageLoadStrategy.class
+drivers\options\timeouts.class
+drivers\options\proxy.class
+drivers\options\browserVersion.class
+drivers\remotewebdriver\capabilities.class
+drivers\options\platformName.class
+waits\threadSleep.class
+drivers\options\acceptInsecureCerts.class
