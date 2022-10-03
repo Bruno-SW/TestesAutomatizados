@@ -3,15 +3,15 @@ package waits.customexpectedconditions;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
+// import org.openqa.selenium.support.ui.FluentWait;
+// import org.openqa.selenium.support.ui.Wait;
+// import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 // import org.openqa.selenium.firefox.FirefoxDriver;
 // import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class waitComCustomExpectedCondition {
@@ -44,28 +44,25 @@ public class waitComCustomExpectedCondition {
 
         driver.get(baseUrl);
         
-        WebDriverWait explicityWait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 
-        Wait<WebDriver> fluentWait = new FluentWait<WebDriver>(driver)
-                                    .withTimeout(Duration.ofSeconds(5))
-                                    .pollingEvery(Duration.ofMillis(500))
-                                    .ignoring(NoSuchElementException.class);
+        // Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+        //                             .withTimeout(Duration.ofSeconds(5))
+        //                             .pollingEvery(Duration.ofMillis(500))
+        //                             .ignoring(NoSuchElementException.class);
 
-
-        WebDriverWait wait = explicityWait;
-        // Wait<WebDriver> wait = fluentWait;
         
-        WebElement botaoAceitar = wait.until(customExpectedConditions.elementoComTextoEEhClicavel(By.tagName("button"), "Accept all and visit site"));
+        WebElement botaoAceitar = wait.until(ExpectedConditionsPersonalizada.elementoComTextoEEhClicavel(By.tagName("button"), "Accept all and visit site"));
 
         botaoAceitar.click();       
                
 
-        WebElement dropDownDownload = wait.until(customExpectedConditions.elementoComTextoEEhClicavel(By.className("p-navigation__link-anchor"), "Download"));
+        WebElement dropDownDownload = wait.until(ExpectedConditionsPersonalizada.elementoComTextoEEhClicavel(By.className("p-navigation__link-anchor"), "Download"));
 
         dropDownDownload.click();    
         
                
-        WebElement desktopUbuntu = wait.until(customExpectedConditions.elementoComTextoEEhClicavel(By.xpath("//h4/a"), "Ubuntu Desktop"));
+        WebElement desktopUbuntu = wait.until(ExpectedConditionsPersonalizada.elementoComTextoEEhClicavel(By.xpath("//h4/a"), "Ubuntu Desktop"));
         
         desktopUbuntu.click(); 
 

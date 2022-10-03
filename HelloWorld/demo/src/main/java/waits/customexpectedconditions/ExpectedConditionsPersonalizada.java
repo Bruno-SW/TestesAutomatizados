@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 
-public class customExpectedConditions {
+public class ExpectedConditionsPersonalizada {
 
     public static ExpectedCondition<WebElement> elementoComTextoEEhClicavel(final By localizador, String texto) {
         return new ExpectedCondition<WebElement>() {
