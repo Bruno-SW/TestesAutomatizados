@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import empresa.base.PageBase;
 import empresa.base.TestBase;
-import empresa.utils.ExplicityWait;
+import empresa.utils.ExplicitWait;
 
 public class PaginaInicialTest extends TestBase {
         private PaginaInicialPage paginaInicialPage;
@@ -35,7 +35,7 @@ public class PaginaInicialTest extends TestBase {
         public void aoClicarNoLogoDeveRedirecionarParaAPaginaInicial(){
             paginaInicialPage.visitar().clickBotaoHome();
             
-            ExplicityWait.esperaPaginaCarregarCompletamente();
+            ExplicitWait.esperaPaginaCarregarCompletamente();
 
             String urlNavegada = getDriver().getCurrentUrl();
 
